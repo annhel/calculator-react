@@ -1,5 +1,6 @@
 import { editableInputTypes } from "@testing-library/user-event/dist/utils"
 import React, { useState } from "react"
+import './App.css'
 
 const viewStyle = {
     backgroundColor: "#F5EEE4",
@@ -15,6 +16,7 @@ const numStyle = {
     backgroundColor: "#6787BF",
     borderColor: "transparent",
     borderRadius: 20,
+    fontSize: "30px"
 }
 
 const zeroStyle = {
@@ -23,6 +25,7 @@ const zeroStyle = {
     backgroundColor: "#6787BF",
     borderColor: "transparent",
     borderRadius: 20,
+    fontSize: "30px"
 }
 
 const operatorStyle = {
@@ -31,6 +34,7 @@ const operatorStyle = {
     backgroundColor: "#E5EEFC",
     borderColor: "transparent",
     borderRadius: 20,
+    fontSize: "30px"
 }
 
 const clearStyle = {
@@ -39,6 +43,7 @@ const clearStyle = {
     backgroundColor: "#F3ECDA",
     borderColor: "transparent",
     borderRadius: 20,
+    fontSize: "25px"
 }
 
 const equalStyle = {
@@ -47,14 +52,15 @@ const equalStyle = {
     backgroundColor: "#D04455",
     borderColor: "transparent",
     borderRadius: 20,
+    fontSize: "30px"
 }
 const tableStyle = {
     backgroundColor: "#393A42",
     borderRadius: 20,
     width: '400px',
     height: '600px',
-    fontSize: "35px",
-    color: 'white',
+    fontSize: "45px",
+    color: '#D04455',
 }
 
 const historyStyle = {
@@ -70,8 +76,9 @@ const historyDiv = {
 const hListStyle = {
     listStyle: 'none',
     fontSize: "25px",
-    textAlign: "center" as 'center'
-
+    textAlign: "center" as 'center',
+    paddingRight: 60,
+    color: 'white',
 }
 
 export function Calculator(){
@@ -163,6 +170,8 @@ export function Calculator(){
     }
 
     return <>
+    <div className="container">
+        <div className="calc">
         <table style={tableStyle}>
             <tr>
             <th colSpan={3} style={viewStyle}>{calc}</th>
@@ -195,13 +204,15 @@ export function Calculator(){
             <tr>
                 <th colSpan={4} onClick={handleResults}><button style={equalStyle}>=</button></th>
             </tr>
-        </table>
-        <div style={historyDiv}>
+        </table></div>
+
+        <div className="history"style={historyDiv}>
             <h2 style={historyStyle}>Result History</h2>       
                 <ul style={hListStyle}>
                     {results.map(r => <li>{r}</li>)}
                 </ul>  
         </div> 
+    </div>
     </>
 
 }
