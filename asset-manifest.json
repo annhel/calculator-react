@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https//anhhhel.github.io/calculator-react/static/css/main.352e792c.css",
-    "main.js": "/https//anhhhel.github.io/calculator-react/static/js/main.20afbabc.js",
-    "index.html": "/https//anhhhel.github.io/calculator-react/index.html",
-    "main.352e792c.css.map": "/https//anhhhel.github.io/calculator-react/static/css/main.352e792c.css.map",
-    "main.20afbabc.js.map": "/https//anhhhel.github.io/calculator-react/static/js/main.20afbabc.js.map"
+    "main.css": "/calculator-react/static/css/main.352e792c.css",
+    "main.js": "/calculator-react/static/js/main.20afbabc.js",
+    "index.html": "/calculator-react/index.html",
+    "main.352e792c.css.map": "/calculator-react/static/css/main.352e792c.css.map",
+    "main.20afbabc.js.map": "/calculator-react/static/js/main.20afbabc.js.map"
   },
   "entrypoints": [
     "static/css/main.352e792c.css",
